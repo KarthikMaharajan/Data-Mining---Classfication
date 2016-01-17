@@ -1,36 +1,0 @@
-								CIS 6930- INTRODUCTION TO DATA MINING
-								     README FILE FOR PROJECT 1
-
-
-In this project we use the 41984439.R script in R Studio to get the output for the various classification algorithms for the Iris Flower and LifeExpectancy data sets
-
-The following are the R packages to be installed in order to get the correct output for the functions:
-
-install.packages("oblique.tree")install.packages("caret")install.packages("partykit")install.packages("datasets")install.packages("RWeka")install.packages("e1071")
-
-After the running of each function use the following detach functions to remove the packages:
-
-detach("package:oblique.tree",unload="TRUE")detach("package:caret",unload="TRUE")
-detach("package:partykit",unload="TRUE")detach("package:datasets",unload="TRUE")detach("package:RWeka",unload="TRUE")detach("package:e1071",unload="TRUE")
-
-
-The following are the functions used in the file “41984439.R” file for implementing the classification algorithms on the Iris Flower dataset:
-
-* Decision Tree C4.5 algorithm			:   	myC45Iris <- function()
-* Decision Tree RIPPER algorithm		: 	myRipperIris <- function()
-* Decision Tree Oblique tree algorithm	:	myObliqueIris <- function()	
-* Naïve Bayes algorithm			:	myNaiveBayesIris <- function()
-* kNN algorithm					:	myKnnIris <- function()
-
-The following are the functions used in the file “41984439.R” file for implementing the classification algorithms on the Life Expectancy dataset:
-
-The file life_expectancy.csv being used here is stored in my system under the path specified in the script file. So when running the functions of this dataset please change the directory for the MyData variable at the start of the functions to the correct path in your system so as to get the correct output.
-
-
-* Decision Tree C4.5 algorithm			:	myC45LifeExpectancy <- function()
-* Decision Tree RIPPER algorithm		:	myRipperLifeExpectancy <- function()
-* Decision Tree Oblique tree algorithm	:	myObliqueLifeExpectancy <- function()
-* Naïve Bayes algorithm			:	myNaiveBayesLifeExpectancy <- function()
-* kNN algorithm					:	myKnnLifeExpectancy <- function()	
-
-
